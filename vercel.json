@@ -1,19 +1,11 @@
 {
   "version": 2,
-  "builds": [
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "rewrites": [
     {
-      "src": "index.html",
-      "use": "@vercel/static"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/aug.rar",
-      "dest": "/public/aug.rar"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/index.html"
+      "source": "/aug.rar",
+      "destination": "/public/aug.rar"
     }
   ],
   "headers": [
