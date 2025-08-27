@@ -8,7 +8,10 @@
     "build": "echo '静态站点无需构建'",
     "deploy": "vercel --prod"
   },
-  "keywords": ["augment", "tutorial", "vscode", "vercel"],
+  "keywords": ["augment", "tutorial", "vscode", "cursor", "vercel"],
   "author": "",
-  "license": "MIT"
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  }
 }
