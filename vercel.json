@@ -1,23 +1,23 @@
 {
-  "version": 2,
-  "builds": [
+  "rewrites": [
     {
-      "src": "**/*",
-      "use": "@vercel/static"
+      "source": "/aug.rar",
+      "destination": "/public/aug.rar"
     }
   ],
-  "routes": [
+  "headers": [
     {
-      "src": "/aug.rar",
-      "dest": "/public/aug.rar",
-      "headers": {
-        "Content-Type": "application/octet-stream",
-        "Content-Disposition": "attachment; filename=aug.rar"
-      }
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/$1"
+      "source": "/aug.rar",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/octet-stream"
+        },
+        {
+          "key": "Content-Disposition", 
+          "value": "attachment; filename=aug.rar"
+        }
+      ]
     }
   ]
 }
