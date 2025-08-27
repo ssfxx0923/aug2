@@ -2,7 +2,7 @@
   "version": 2,
   "builds": [
     {
-      "src": "index.html",
+      "src": "**",
       "use": "@vercel/static"
     }
   ],
@@ -14,22 +14,6 @@
     {
       "src": "/(.*)",
       "dest": "/index.html"
-    }
-  ],
-  "functions": {},
-  "headers": [
-    {
-      "source": "/aug.rar",
-      "headers": [
-        {
-          "key": "Content-Type",
-          "value": "application/x-rar-compressed"
-        },
-        {
-          "key": "Content-Disposition",
-          "value": "attachment; filename=aug.rar"
-        }
-      ]
     }
   ]
 }
